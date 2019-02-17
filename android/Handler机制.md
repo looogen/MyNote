@@ -49,7 +49,7 @@ IMessenger mMessenger;
 |--异步消息表示：不需要对同步消息进行全局排序的中断或事件。
 |--异步消息不受MessageQueue#enqueueSyncBarrier(long)引入的同步屏障的限制。
 
-* @param callback 处理消息的回调接口，或null。
+* @param callback 处理消息的回调接口，或 null。
 * @param async 如果为true，handler将为[发送到它那的每个Message或Runnable]调用
 * Message#setAsynchronous(boolean)
 ---->[Handler#Handler(Callback,boolean)]-------------------------------
