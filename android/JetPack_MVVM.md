@@ -4,10 +4,13 @@
 # JetPack MVVM
 
 ## 1. Livecycle
-> 解决生命周期管理一致性的问题
+> 解决生命周期管理一致性的问题，手工根据生命周期来激活、解绑和叫停容易滋生一致性隐患。
 
-- 手工操作生命周期容易滋生一致性隐患，带来指数级的后果
-- 在视图控制器生命周期感知
+带来的好处
+
+- 规避为监听状态而注入视图控制器的做法
+- 规避为追溯事故来源而注入视图控制器的做法
+
 ~~~java
 getLifecycle().addObserver(DefaultLifecycleObserver observer);
 ~~~
